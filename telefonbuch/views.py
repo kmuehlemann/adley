@@ -10,6 +10,3 @@ def hello(request):
 def einträge(request):
     einträge = TelefonbuchEintrag.objects.all()
     return render(request, 'einträge.html', context = { 'einträge' : einträge})
-
-def test():
-    return "Test Github!"
